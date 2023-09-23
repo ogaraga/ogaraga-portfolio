@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./cont.css" />
+    <title>CONTACT ME</title>
+  </head>
+  <body>
+    <!-- feedback message from portfolio owner -->
+    <div id="mytextmgs">
+      <i class="fa-regular fa-envelope"></i>
+      <p>
+        Thank you for reaching out to me, I shall be in touch as soon as I can.
+      </p>
+      <aside>
+        Do you need a quick ride home?
+        <a style="color: aqua" href="./home.html" class="link">Yes!</a> ||
+        <a
+          style="color: red"
+          href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/"
+          class="link"
+          >No!</a
+        >
+      </aside>
+    </div>
+
+    <!-- contact me section -->
+    <div class="contact-me" id="contactme">
+      <!--Form area-section  -->
+      <div class="intro">
+        <p>Please, kindly fill in your details below</p>
+        <!-- a link to home page -->
+        <a href="./home.html" class="link">BACK HOME?</a>
+      </div>
+      <div class="fill_in">
+        <p id="register">Click to send me a message</p>
+      </div>
+
+      <form id="forms">
+        <div class="wrapper_1">
+          <label id="mylabel1" class="form-label">Full Name</label><br />
+          <input
+            type="text"
+            name="FullName"
+            id="texbox1"
+            autocomplete="on"
+            class="form-control"
+            placeholder="Enter your names here"
+            required
+          /><br />
+          <br />
+          <label id="mylabel" class="form-label">Email</label><br />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            autocomplete="on"
+            class="form-control"
+            placeholder="example@good.com"
+            required
+          /><br /><br />
+          <label id="mylabeltel" class="form-label">Tel</label><br />
+          <input
+            type="tel"
+            name="Phone"
+            id="phone"
+            autocomplete="on"
+            class="form-control"
+            placeholder="Enter your telephone"
+            required
+          /><br /><br />
+          <div id="btns_1">
+            <button type="reset" id="myreset">Reset</button>
+            <button type="button" id="next">Next</button>
+          </div>
+          <!-- Conditional statement-label if a condition turns false -->
+          <label id="mylabel7"></label> <br />
+        </div>
+
+        <div class="wrapper_2">
+          <div id="radio-radio">
+            <label id="mylabel2" class="form-check">Gender</label><br />
+            <input
+              type="radio"
+              name="Male"
+              id="radiobox1"
+              class="form-check-input"
+            />
+            <label id="mylabel3" class="form-check">Male</label>
+            <input
+              type="radio"
+              name="Female"
+              id="radiobox2"
+              class="form-check-input"
+            />
+            <label id="mylabel4" class="form-check">Female</label><br />
+          </div>
+          <label id="mylabel5" class="form-label">Your age</label> <br />
+          <input
+            type="number"
+            name="SenderAge"
+            id="myage"
+            class="form-control"
+            placeholder="(Optional)"
+          />
+          <br />
+          <br />
+          <label id="mylabel6" class="form-label">location</label> <br />
+          <select id="selectme" name="Country/Continent" class="form-control">
+            <option selected disabled value="Anylocation">
+              Select your location
+            </option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="GHANA">GHANA</option>
+            <option value="GERMANY">GERMANY</option>
+            <option value="SOUTH-AMERICA">SOUTH-AMERICA</option>
+            <option value="EUROPE">EUROPE</option>
+            <option value="AFRICA">AFRICA</option>
+            <option value="ASIA">ASIA</option></select
+          ><br /><br />
+          <textarea
+            name="Message"
+            id="message"
+            class="form-control"
+            minlength="15"
+            maxlength="200"
+            cols="30"
+            rows="5"
+            placeholder="Enter your message here"
+            required
+          ></textarea>
+          <br />
+          <div class="btns_2">
+            <button type="button" id="prev">Back</button>
+            <button type="submit" id="mybtns">Submit</button> <br />
+          </div>
+
+          <label id="mylabel8"></label> <br />
+        </div>
+      </form>
+    </div>
+    <script src="./cont.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </body>
+</html>

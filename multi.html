@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./multi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MULTI-PROJECTS</title>
+  </head>
+  <body>
+    <!-- Toggling arena for viewer delights -->
+    <nav>
+      <div class="toggles">
+        <span class="fa-solid fa-toggle-off" style="display: none"></span>
+        <span class="fa-solid fa-toggle-on"></span>
+      </div>
+    </nav>
+    
+    <!-- CHATBOT SECTION -->
+    <h2 id="lets_chat">Click on me<i class="fa-brands fa-rocketchat"></i></h2>
+    <div class="chatbot-container" id="chatbox">
+      <div class="chatbot-message">
+        <p id="p">
+          Hey! I'm your virtual assistant:
+          <em style="color: green">I'm listening..</em>
+        </p>
+        <p id="chatbottext"></p>
+        <div class="input-block">
+          <input
+            type="text"
+            id="textbox"
+            autocomplete="on"
+            placeholder="Enter your text..."
+          />
+          <button type="button" id="end">EndChat</button>
+          <button type="button" id="enter">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="mysection">
+      <span>
+        <a href="./home.html" target="_blank" rel="noopener noreferrer"
+          >Back Home?</a
+        >
+      </span>
+
+      <div class="welcome">
+        <h1>welcome to multi-dimensioned projects page</h1>
+        <p>
+          You have the latitude to game, test my works and each is a clickable
+          link! I'm open to learning and advice. You can refactor by permission.
+          Thank you!
+        </p>
+      </div>
+
+      <div class="maindiv">
+        <ul>
+          <li>
+            <a
+              href="https://ogaraga-rock-paper-scissors.vercel.app/"
+              target="_blank"
+              >ROCK, PAPER & SCISSORS GAME
+            </a>
+          </li>
+          <li>
+            <a href="https://password-ten-eta.vercel.app/" target="_blank"
+              >MULTIPLE PASSWORD TEST</a
+            >
+          </li>
+          <li>
+            <a href="https://thirdgame.vercel.app/" target="_blank"
+              >ROCK, PAPER & SCISSORS GAME DEVELOPED WITH JAVASCRIPT ONLY___NO
+              HTML/CSS/SASS</a
+            >
+          </li>
+          <li>
+            <a href="https://ogaraga.github.io/captcha" target="_blank"
+              >CAPTCHA VALIDATION: ARE YOU A HUMAN?</a
+            >
+          </li>
+          <li>
+            <a href="https://secondcaptcha.vercel.app/" target="_blank"
+              >CAPTCHA 2 VALIDATION: ARE YOU A HUMAN?</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              >chatbot: Hovering on the screen rightwards static</a
+            >
+          </li>
+          <li>
+            <a href="https://formz.vercel.app/" target="_blank"
+              >FORM MANIPULATION WITH JS/HTML/CSS</a
+            >
+          </li>
+          <li>
+            <a href="https://project-quotes.vercel.app/" target="_blank"
+              >QUOTES GENERATOR USING JAVASCRIPT</a
+            >
+          </li>
+          <li>
+            <a href="https://fan-nine.vercel.app/" target="_blank"
+              >REAL-LIFE FAN</a
+            >
+          </li>
+          <li>
+            <a href="https://regex-iota.vercel.app/" target="_blank"
+              >REGEX VALIDATION</a
+            >
+          </li>
+          <li>
+            <a href="https://uniqempl.vercel.app/" target="_blank"
+              >EMPLOYEE ID GENERATOR</a
+            >
+          </li>
+          <li>
+            <a href="https://dolist-cyan.vercel.app" target="_blank"
+              >TO-DO LIST USING JAVASCRIPT</a
+            >
+          </li>
+          <li>
+            <a href="https://qrcode-seven-flame.vercel.app/" target="_blank"
+              >QR CODE GENERATOR WITH JS/HTML/CSS</a
+            >
+          </li>
+          <li>
+            <a href="https://smscode.vercel.app/" target="_blank"
+              >PHONE/SMS VERIFICATION</a
+            >
+          </li>
+          <li>
+            <a href="https://clock-ogaraga.vercel.app/" target="_blank"
+              >FUNCTIONAL CLOCK</a
+            >
+          </li>
+          <li>
+            <a href="https://progressform.vercel.app/" target="_blank"
+              >MULTI-FORM PROGRESS BAR</a
+            >
+          </li>
+          <li>
+            <a href="https://progressbar-sand.vercel.app/" target="_blank"
+              >STEP PROGRESS BAR</a
+            >
+          </li>
+          <li>
+            <a href="https://motions-fawn.vercel.app/" target="_blank"
+              >3-D ANIMATION PROJECT</a
+            >
+          </li>
+          <li>
+            <a href="https://digitalclock-theta.vercel.app/" target="_blank"
+              >DIGITAL CLOCK</a
+            >
+          </li>
+          <li>
+            <a href="https://checkreact2.vercel.app" target="_blank"
+              >JSX and React Component Poroject</a
+            >
+          </li>
+
+          
+        </ul>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+      // Toggle modes for view interests
+      $(() => {
+        $(".fa-toggle-on").click(() => {
+          $("#mysection").css("background", "gray");
+          $(".fa-toggle-off").show();
+          $(".fa-toggle-on").hide();
+          $("p").css("color", "black");
+          $("a").css("color", "white");
+          $("h1").css("color", "red");
+          $("a").hover(() => {
+            $("a").css("color", "gold");
+          });
+        });
+        $(".fa-toggle-off").click(() => {
+          $("#mysection").css("background", "#000");
+          $(".fa-toggle-off").hide();
+          $(".fa-toggle-on").show();
+          $("p").css("color", "gold");
+          $("a").css("color", "teal");
+          $("h1").css("color", "white");
+          $("a").hover(() => {
+            $("a").css("color", "coral");
+          });
+        });
+      });
+
+      // chatbot section and functionality
+      const enterMe = document.getElementById("enter");
+      var botChats = document.getElementById("chatbottext");
+      let clickOnMe = document.getElementById("lets_chat");
+      let endChat = document.getElementById("end");
+      let chatBox = document.getElementById("chatbox");
+      clickOnMe.onclick = () => {
+        if (chatBox.style.display == "none") {
+          chatBox.style.display = "block";
+          clickOnMe.style.display = "none";
+        } else {
+          clickOnMe.style.display = "block";
+          chatBox.style.display = "none";
+        }
+      };
+      endChat.onclick = () => {
+        if (chatBox.style.display == "block") {
+          chatBox.style.display = "none";
+          clickOnMe.style.display = "block";
+          botChats.innerHTML = "";
+        } else {
+          chatBox.style.display = "block";
+          clickOnMe.style.display = "none";
+        }
+      };
+
+      var textbox = document.getElementById("textbox");
+      var bot_texts = document.getElementById("chatbottext");
+      var time = new Date().toLocaleString(
+        {},
+        { hour: "2-digit", minute: "2-digit" }
+      );
+
+      textbox.addEventListener("keydown", (e) => {
+        if (e.code == "Enter") {
+          bot_texts.innerHTML = ` ${textbox.value}<br>${time}` + "<br>";
+          bot_texts.style.color = "crimson";
+          bot_texts.style.float = "right";
+          let input = textbox.value;
+          textbox.value = "";
+          setTimeout(() => {
+            if (input in bot$Me) {
+              bot_texts.innerHTML = ` ${bot$Me[input]}<br>${time}` + "<br>";
+              bot_texts.style.float = "left";
+              bot_texts.style.color = "green";
+              bot_texts.scrollIntoView({ behavior: "auto" });
+            } else {
+              bot_texts.innerHTML = `please try asking something else ${time}`;
+              bot_texts.style.float = "left";
+              bot_texts.style.color = "green";
+              bot_texts.scrollIntoView({ behavior: "auto" });
+            }
+          }, 3500);
+        }
+      });
+      enterMe.addEventListener("click", () => {
+        bot_texts.innerHTML = ` ${textbox.value}<br>${time}` + "<br>";
+        bot_texts.style.color = "crimson";
+        bot_texts.style.float = "right";
+        let input = textbox.value;
+        textbox.value = "";
+        setTimeout(() => {
+          if (input in bot$Me) {
+            bot_texts.innerHTML = ` ${bot$Me[input]}<br>${time}` + "<br>";
+            bot_texts.style.float = "left";
+            bot_texts.style.color = "green";
+            bot_texts.scrollIntoView({ behavior: "auto" });
+          } else {
+            bot_texts.innerHTML = `please try asking something else ${time}`;
+            bot_texts.style.float = "left";
+            bot_texts.style.color = "green";
+            bot_texts.scrollIntoView({ behavior: "auto" });
+          }
+        }, 3500);
+      });
+
+      var bot$Me = {
+        "see you later": "Great! bye",
+        "how are you doing?": "wonderful and you friend?",
+        "how old are you?": "I'm ageless!",
+        "are you wise?": "I'm not solomon! but ask your question",
+        bye: "See you next time",
+        hi: "Hey buddy!",
+        "idiot!": "What!?",
+        ok: "Good!",
+        "Whats up?": "Great!",
+        "What's up?": "Wonderful and you?",
+        "Wow!": "Yea, thats the spirit!",
+        Wow: "Yoo!",
+        "Can you help me?": "Sure, i can!",
+        "Why?": "I'm working with time",
+        Lol: "smiles...",
+        "Lol!": "yep!",
+        "Great!": "Yeah!",
+        Friend: "Hey",
+        "Do you know raymond?": "Yah, i do and what about him?",
+        "Do you know raymond": "Yah, i do and what about him?",
+        "Who is mr raymond?": "Yah, his is from Nigeria and what about him?",
+        "Who is God?": "He is the creator of infinite",
+        "Tell me about him":
+          "I work with time please, check out his profile or ask me something different or click EndChat button!",
+        "Thank you!": "you are welcome!",
+        "Who are you?": "i'm your assistant",
+        "Tell me about you": "i'm mr. chatbot!",
+        "Who created you?": "Funny question!",
+        "Can you add 2 plus 3?": "sure!",
+        "What is 2+10?": "12!",
+        "Gotta go": "ok, bye!",
+        "Who is the president of USA?":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "Who is the president of usa":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "Who is the president of America?":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "Who is the president of america":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "Are you married?": "Talk to me seriously",
+        "What are you doing now?": "im with you",
+        "What's going on?": "nothing buddy",
+        "Whats happening?": "nothing buddy",
+        "Whats going on?": "nothing buddy",
+        "What's up?": "nothing buddy",
+        "Whats going on?": "nothing yeah",
+        "Whats your name?": "i'm infinite",
+        "What's your name?": "i'm infinite",
+        Bye: "yeah, nice talking to you!",
+        "How are you?": "fine and you?",
+        "I have a problem": "i can help",
+        "What is your name?": "i'm infinite",
+
+        hello: "Hi, welcome to my world!",
+        Hello: "Hi",
+        yeah: "How may i help?",
+        Yeah: "How can i help?",
+        hey: "Hello!",
+        Hey: "Hi",
+        "you there?": "Yep",
+        "Are you there?": "yea dude!",
+        "Are you God?": "Is this a joke? I'm infinite but not God!",
+        "See you later": "Great! bye",
+        "How are you doing?": "wonderful and you friend?",
+        "How old are you?": "I'm ageless!",
+        "Are you wise?": "I'm not solomon! but ask your question",
+        Bye: "See you next time",
+        Hi: "Hey buddy!",
+        "Idiot!": "What!?",
+        Ok: "Good!",
+        "whats up?": "Great!",
+        "what's up?": "Wonderful and you?",
+        "wow!": "Yea, thats the spirit!",
+        wow: "Yoo!",
+        "can you help me?": "Sure, i can!",
+        "why?": "I'm working with time",
+        lol: "smiles...",
+        "lol!": "yep!",
+        "great!": "Yeah!",
+        friend: "Hey",
+        "do you know raymond?": "Yah, i do and what about him?",
+        "do you know raymond": "Yah, i do and what about him?",
+        "who is mr raymond?": "Yah, his is from Nigeria and what about him?",
+        "who is God?": "He is the creator of infinite",
+        "tell me about him":
+          "I work with time please, check out his profile or ask me something different or click EndChat button!",
+        "thank you!": "you are welcome!",
+        "who are you?": "i'm your assistant",
+        "tell me about you": "i'm mr. chatbot!",
+        "who created you?": "Funny question!",
+        "can you add 2 plus 3?": "sure!",
+        "what is 2+10?": "12!",
+        "gotta go": "ok, bye!",
+        "who is the president of USA?":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "who is the president of usa":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "who is the president of America?":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "who is the president of america":
+          "As @ May 20th 2023, it was Joe Biden: maybe he is now",
+        "are you married?": "Talk to me seriously",
+        "what are you doing now?": "im with you",
+        "what's going on?": "nothing buddy",
+        "whats happening?": "nothing buddy",
+        "whats going on?": "nothing buddy",
+        "what's up?": "nothing buddy",
+        "whats going on?": "nothing yeah",
+        "whats your name?": "i'm infinite",
+        "what's your name?": "i'm infinite",
+        bye: "yeah, nice talking to you!",
+        "how are you?": "fine and you?",
+        "i have a problem": "i can help",
+        "what is your name?": "i'm infinite",
+        "": "i don't understand!, type in something",
+        "who is raymond?": "he is a full stack dev!",
+        "do you know him?": "pretty well",
+        "where did he learn web development?": "check out his portfolio",
+        "how old is ogaraga": "Raymond is great",
+        "is he employed?": "check his profile",
+        "where did he graduate from?": "mouau",
+        "who is the founder of google?": "page larry",
+        "who created javascript?": "Brendan Eich",
+        "what's that?": "never mind",
+        "good!": "Thanks!",
+        good: "thank you!",
+        "ok then": "yep, then!",
+        "ok no problem": "yea buddy!",
+        "have a nice day": "same here",
+        "do have a great day": "great, same to you buddy!",
+        "talk to you later": "ok, bye",
+        bye: "enjoy yourself buddy!",
+        "can i ask you a question?": "please do",
+        "tell me about football":
+          "soccer started in 1936 or thereabout in greece",
+        "who is the best player in the world?": "he is late!",
+        "what is his name?": "who?",
+        "What?": "I don't understand!",
+        "Who are you?": "I'm infinite!",
+        "What is infinite?": "I,m ageless, sort of cyborg!",
+        "Where are you now?": "I'm always around in the cloud!",
+        "The best player in the world": "i already told you!",
+        "Where are you from?": "i'm always around in the cloud",
+        "How can i learn coding?":
+          "it is simple! just contact:port-ogaraga.vercel.app/home.html!",
+        "Cost of learning programming?":
+          "it depends on your desire and scope of what you want",
+      };
+    </script>
+  </body>
+</html>

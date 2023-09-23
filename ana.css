@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (max-width: 540px) {
+  body {
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+  }
+}
+body details {
+  color: #fff;
+  font-size: 20px;
+}
+@media screen and (max-width: 540px) {
+  body details {
+    margin: auto;
+    padding: 5px;
+    width: auto;
+  }
+}
+body details P {
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5;
+  word-spacing: 5px;
+  margin: 3px;
+}
+body details h2 {
+  text-align: center;
+  color: red;
+}
+body details h2 a {
+  text-decoration: none;
+  color: gold;
+  margin: 30px;
+}
+body details summary {
+  text-align: justify;
+  line-height: 2.5;
+  margin: 30px;
+}
+body #caps {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}
+body #caps:hover {
+  color: red;
+  padding: 10px;
+  cursor: pointer;
+  width: auto;
+}
+body li {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+body li .link-1 {
+  text-decoration: none;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+}/*# sourceMappingURL=ana.css.map */

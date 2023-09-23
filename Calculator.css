@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+@media screen and (max-width: 540px) {
+  * {
+    overflow-y: visible;
+  }
+}
+
+body {
+  background: rgb(0, 140, 255);
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+@media screen and (max-width: 540px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.container-calculators {
+  width: 70%;
+  height: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, black, gray, black);
+}
+@media screen and (max-width: 540px) {
+  .container-calculators {
+    width: 70%;
+    height: 80%;
+    margin: 80px auto;
+    background: linear-gradient(to right, lightgreen, gray, lightblue);
+    overflow: visible;
+  }
+}
+
+.firstsection {
+  margin: auto 50px;
+  padding: 10%;
+  font-size: 30px;
+  width: 100%;
+  outline-offset: 15px;
+  height: auto;
+}
+.firstsection details {
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+}
+.firstsection details summary {
+  color: gold;
+  font-size: 29px;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: auto;
+}
+.firstsection details summary:hover {
+  color: rgba(255, 0, 0, 0.814);
+  cursor: pointer;
+}
+.firstsection details p {
+  color: burlywood;
+  font-size: 25px;
+  font-weight: bold;
+}
+.firstsection details .calc-science {
+  text-decoration: underline;
+  color: white;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.firstsection details .calc-science:hover {
+  color: darkgreen;
+  cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+  .firstsection {
+    margin: 5px 50px;
+    padding: 10%;
+    font-size: 30px;
+    width: 100%;
+    outline-offset: 15px;
+    height: auto;
+  }
+}
+
+.secondsection {
+  margin: auto 50px;
+  padding: 10%;
+  font-size: 30px;
+  width: 100%;
+  height: auto;
+}
+.secondsection details {
+  font-weight: bold;
+}
+.secondsection details summary {
+  color: rgba(255, 0, 0, 0.814);
+  font-size: 29px;
+  outline: none;
+  border: none;
+}
+.secondsection details summary:hover {
+  cursor: pointer;
+  color: gold;
+}
+.secondsection details p {
+  color: rgb(222, 219, 135);
+  font-size: 25px;
+  font-weight: bold;
+}
+.secondsection details .calc-simple {
+  text-decoration: underline;
+  color: white;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.secondsection details .calc-simple:hover {
+  color: darkgreen;
+  cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+  .secondsection {
+    margin: auto 50px;
+    padding: 10%;
+    font-size: 30px;
+    width: 100%;
+    outline-offset: 15px;
+    height: auto;
+  }
+}/*# sourceMappingURL=Calculator.css.map */

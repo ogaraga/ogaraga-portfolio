@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+    <title>PORTFOLIO</title>
+</head>
+
+<body id="mybody">
+
+  <!-- All bodycontianer -->
+
+  <!-- preloader page -->
+<div class="preloader-container">
+  <div class="preloader" id="loader">
+  </div>
+</div>  
+
+<!-- Login page to my portfolio -->
+<div class="signOn" style="display: none;">
+  <h1 id="h1">Welcome to my portfolio</h1>
+ 
+  <form class="form" method="post">
+    <label for="Email">EMAIL</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Enter your email here..."
+    />
+    <label for="Password">PASSWORD</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Enter any password here..."
+    />
+    <button type="submit" id="signIn">log In</button>
+    <span id="span" style="text-align: center; color: grey; font-size: 20px;"></span>
+  </form>
+</div>
+
+
+<section  id="bodding">
+
+    <!-- CHATBOT SECTION -->
+    <h2 id="lets_chat">Click on me<i class="fa-brands fa-rocketchat"></i></h2>
+    <div class="chatbot-container" id="chatbox">
+        <div class="chatbot-message">
+            <p id="p">Hey! I'm your virtual assistant: <em style="color:green">I'm listening..</em></p>
+            <p id="chatbottext"></p>
+            <div class="input-block">
+                <input type="text" id="textbox" autocomplete="on" placeholder="Enter your text...">
+                <button type="button" id="end">EndChat</button>
+                <input type="button" id = enter value="Send">
+            </div>
+        </div>
+    </div>
+<!-- Portfolio address section for search box items -->
+      <div class="address_div">
+        <p class="ports">My Portfolio</p>
+        <span class="fa-solid fa-toggle-off" style="display: none;"></span>
+        <span class="fa-solid fa-toggle-on"></span>
+        <span class="fa-solid fa-magnifying-glass" id="glass"></span>
+        <span class="fa-solid fa-xmark" id="klose"></span>
+        <input type="search" id="search" placeholder="Search box">
+      </div>  
+        
+    <!-- search items on search box -->
+        <div id="drop_up" style="display: none; list-style: none;">
+            <a href="./home.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">HOME</a>
+            <a href="./about.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;">ABOUT ME</a>
+            <a href="./edu.html" class="humz" style="color: white; padding: 10px; margin: 10px; text-decoration: none;" >EDUCATION</a>
+            <a href="./pubs.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >PUBLICATIONS @ PROJECTS</a>
+            <a href="./work.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >WORK-EXPERIENCE</a>
+            <a href="./cont.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >CONTACT ME</a>
+            <a href="./ngo.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >NGO WEBSITE</a>
+            <a href="./nev.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >NEVER QUIT YET</a>
+            <a href="./surv.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >SURVIVING THE ODDS OF</a>
+            <a href="./Calculator.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >CALCULATORS FOR YOU</a>
+            <a href="https://w3schools.com" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >W3SCHOOLS FOR WEB DEVELOPERS</a>
+            <a href="https://nodejs.org/en" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >NODE JS FOR DEVELOPERS</a>
+            <a href="./ana.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >ANATHOMY OF LIFE</a>
+            <a href="./alg.html" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >ALGORITHM OF LIFE</a>
+            <a href="https://boxicons.com/" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >BOXICONS</a>
+            <a href="https://learn.gomycode.co/login" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >GOMYCODE ENVIRONMENT</a>
+            <a href="https://google.com" class="humz" style="color: white; padding: 10px;  margin: 10px; text-decoration: none;" >GOOGLE</a>
+        </div>
+
+
+    <nav>  
+      <div class="tested" id="dropdown">
+            <a href="./home.html" class="hom" id="de_home">HOME</a>
+            <a href="./about.html" class="hom">ABOUT ME</a>
+            <a href="./edu.html" class="hom">EDUCATION</a>
+            <a href="./work.html" class="hom">WORK-XPERIENCE</a>
+            <a href="./cont.html" class="hom">CONTACT ME</a>
+            <a href="./pubs.html" class="hom">MY PROJECTS</a>
+            <span class="hom" id="logout">LOGOUT</span>
+      </div>
+      <div class="navbars">
+        <i id ="open" class="fa-solid fa-bars"></i>
+        <p id ="close">X</p>
+      </div>
+    </nav>
+          <!-- login section -->
+      <div id="yourName"></div>
+
+    <section class="pic_social">
+            <!-- picture section and vital info -->
+          <div class="imag-info">
+            <i id="exact-timedate"></i> 
+            <h3><em>software developer</em></h3>
+            <img src="mypix.jpg" alt="my image">
+            <div class="imag-items">
+              <span style="color: blue;">Name</span>: Ogaraga Raymond<br>
+                <span style="color: blue;">Email</span>: raymond.ogaraga@gmail.com<br>
+                <span style="color: blue;">Tel</span>: 08069304370 <br>
+                <span style="color: blue;">Hobbies</span>: Football, Tennis and writing<br>
+            </div>
+          </div>
+
+          <!-- Social media contacts -->
+        <div class="social-media">
+          <p>To know more about me, kindly click on any of the links : </p>
+          <div class="social-items">
+              <a href="https://web.facebook.com" class="linksocial"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://chat.whatsapp.com/CQMd2K0vJBF8IHndx4g4QZ/" class="linksocial"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://twitter.com/" class="linksocial"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/raymond-ogaraga-2736371b0/" class="linksocial"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+    </section>
+
+
+  <!-- Footer section @ COPYRIGHTS -->
+
+    <footer>
+      <p>This <em><b>portfolio</b></em> is subject to intl copyrights' laws and legislations &copy;2023.</p>
+    
+    </footer>
+  
+</section>
+
+<script src="./script.js" defer></script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+<script>
+   // toggle modes for viewers' interests.
+
+   $(() => {
+        $('.fa-toggle-on').click(() => {
+            $('body').css("backgroundColor", "gray");
+            $('footer').css('backgroundColor', 'black')
+            $('.address_div').css('backgroundColor', 'black');
+            $('.fa-toggle-off').show();
+            $('.fa-toggle-on').hide();
+            $('.tested').css('backgroundColor','green');
+            
+        });
+        $('.fa-toggle-off').click(() => {
+            $('body').css("backgroundColor", "#000");
+            $('.address_div').css('backgroundColor', 'gray');
+            $('.tested').css('backgroundColor','crimson');
+            $('footer').css('backgroundColor', 'gray')
+            $('.fa-toggle-off').hide();
+            $('.fa-toggle-on').show();
+            $('*').css("color", "white");
+            
+        });
+        
+    });
+</script>
+</body>
+</html>

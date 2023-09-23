@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 540px) {
+  body {
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+  }
+}
+
+details {
+  color: #fff;
+  font-size: 20px;
+}
+@media screen and (max-width: 540px) {
+  details {
+    margin: auto;
+    padding: 5px;
+    width: auto;
+  }
+}
+details P {
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5;
+  word-spacing: 5px;
+  margin: 3px;
+}
+details h2 {
+  text-align: center;
+  color: red;
+}
+details h2 a {
+  text-decoration: none;
+  color: gold;
+  margin: 30px;
+}
+details summary {
+  text-align: justify;
+  line-height: 2.5;
+  margin: 30px;
+  outline: none;
+  border: none;
+}
+details summary:hover {
+  cursor: pointer;
+  color: red;
+}
+details .surv-odd {
+  color: white;
+  width: 90%;
+  height: auto;
+  text-align: justify;
+  margin: auto;
+}
+details .surv-odd #surving {
+  color: aqua;
+}
+details .surv-odd a {
+  color: gold;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  cursor: pointer;
+}
+details .surv-odd a:hover {
+  color: green;
+  transition: all 0.3s;
+}
+details .images-of-surv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+@media screen and (max-width: 540px) {
+  details .images-of-surv {
+    display: grid;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+details .images-of-surv img {
+  padding: 10px;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}
+details #media {
+  color: yellow;
+  text-align: start;
+}
+details .linksocial {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: auto 20px;
+  text-align: center;
+}
+details i {
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+details i:hover {
+  cursor: pointer;
+  color: aqua;
+  transition: all 0.5s;
+}
+
+#caps {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}
+#caps:hover {
+  color: red;
+  padding: 10px;
+  cursor: pointer;
+  width: auto;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+li .link-1 {
+  text-decoration: none;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+
+footer {
+  color: gold;
+  opacity: 0.99;
+  overflow: hidden;
+}
+footer p {
+  text-align: start;
+  padding: 30px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+@media screen and (max-width: 540px) {
+  footer {
+    text-align: center;
+    margin-top: auto;
+    height: auto;
+  }
+}/*# sourceMappingURL=surv.css.map */

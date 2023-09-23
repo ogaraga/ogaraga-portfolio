@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+        background-color: rgba(0, 0, 0, 1);
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        @media screen and (max-width: 540px) {
+            overflow: scroll;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 5px;
+        }
+        
+        details{
+            color: #fff;
+            font-size: 20px;
+            @media screen and (max-width: 540px){
+                margin: auto;
+                padding: 5px;
+                width: auto;
+        
+            }
+        
+            P{
+                text-align: left;
+                padding: 20px;
+                line-height: 1.5;
+                word-spacing: 5px;
+                margin: 3px;
+            }
+        
+            h2{
+                text-align: center;
+                color: red;
+                a{
+                text-decoration: none;
+            color: gold;
+            margin: 30px;
+            }
+        }
+            summary{
+                text-align: justify;
+                line-height: 2.5;
+                margin: 30px;
+            }
+        }
+        
+        #caps{
+            color: #fff;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 30px;
+            &:hover{
+                color: red;
+                padding: 10px;
+                cursor: pointer;
+                width: auto;
+            }
+        }
+        
+        li{
+            list-style: none;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        .link-1{
+            text-decoration: none;
+            font-size: 35px;
+            text-transform: uppercase;
+            color: white;
+            
+        }
+        }
+}

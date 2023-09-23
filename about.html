@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>ABOUT ME</title>
+</head>
+<body>
+    <!-- CHATBOT SECTION --> 
+    <h2 id="lets_chat">Click on me<i class="fa-brands fa-rocketchat"></i></h2>
+    <div class="chatbot-container" id="chatbox">
+        <div class="chatbot-message">
+            <p id="p">Hey! I'm your virtual assistant: <em style="color:green">I'm listening..</em></p>
+            <p id="chatbottext"></p>
+            <div class="input-block">
+                <input type="text" id="textbox" autocomplete="on" placeholder="Enter your text...">
+                <button type="button" id="end">EndChat</button>
+                <input type="button" id = enter value="Send">
+            </div>
+        </div>
+    </div>
+<!-- section about me -->
+    <div class="aboutme">
+        <span class="fa-solid fa-toggle-off" style="display: none;"></span>
+        <span class="fa-solid fa-toggle-on"></span>
+        <h1>ABOUT ME</h1>
+        <p id="aboutme">
+            Learning is dynamic. It is just like a seed that is being planted with a specific purpose with the assurance 
+            that one day it will decay, wear a new body, spring off the soil and starts tending up, then it grows. 
+            It's continuous existence as it grows gives it the opportunity to tap from the soil from where it sprang up 
+            and eventaully matures to regenerate into Its kinds. The 'kinds' here symbolizes multiplicity of impacts and 
+            coverage/expansion which ranges from financial to social values. As it pays to seed, so it is and will continue 
+            to be; learning. I seek a new challenge and a ground that is ripen with learning however though it may seem. 
+            Good life and growth are in the domain of measurable and defined challenges which come with a good cost. Meeting 
+            new people of practical and social powerful stances is a desire always pruned. Working with cross-racial and 
+            diversed-religious personality will help me build good thought about life and the people therein. I am a go-getter 
+            and very jealous at what i do to earn a living. I don't compromise nor bend rules set out by my employer unless the 
+            instance at which it creates/gives good financial shore-up for my company as that is the bedrock of its 
+            existence/establishment while creating values for people. I am a Careful and accurate web-developer with mastery 
+            on tech-invoguing models like HTML, CSS, SASS, Javascripts, Nodejs, JQuery, ReactJs, MongoDB, etc. I have built some web-based profiles and landing pages which
+             make the eyes glue at an instance of perusal. I have excellent knowledge in the operations of computing packages 
+             like Ms Words, Ms Excel AND Powerpoint. Few financial institutions around my sphers of contact have had my presence. 
+             Three of these are: The United Bank For Africa(UBA PLC), XpatFunds Financial Services Aba and Mainstreet Bank. I was 
+             given the opportune time to work as an IT and customer service personnel. This indeed had imparted on me super skills in good 
+             networking and human relationship. I have some weakneses which are just limited to having zero tolerance to fraud, 
+             attention to details, thrift with expences, zero tolerance to disproportionate lies. I have few strenght like working 
+             with team, meeting deadlines, integrity, sportsmanship, ownership spirit, going the extra-miles and a go-getting spirit among many others.
+        </p>
+    </div>
+    <!-- about training experience -->
+    <div class="trainings">
+        <h2>Few of my trainings <em>======></em></h2>
+        <ul>
+            <li>HTLM/CSS/SCSS</li>
+            <li>Javascripts/Reacts.JS</li>
+            <li>JQuery & Node.JS</li>
+            <li>Ms packages</li>
+            <li>Noval Tracking systems</li>
+            <li>Customer Services and Relationship Management</li>
+            <li>Marketing and sales</li>
+            <li>Peace and conflict resolutions</li>
+            <li>Effective leadership and Human management.</li>
+            <li>Many More ongoing</li>
+        </ul>
+       
+    </div>
+    <!-- back to home page -->
+    <div class="homy">
+        <p> <a href="./home.html"     class="hom">Back-Home?</a>
+        </p>
+    </div>
+     <!-- FOOTER SECTION -->
+     <footer class="foter">
+        <p>The <em><b> Projects herein</b></em> are subject to copyrights &copy;2023.</p>
+        
+    </footer>
+    <script src="./about.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    
+    <script>
+        // section for lightmode or other modes
+        $(()=>{
+            $('.fa-toggle-on').click(()=>{
+            $('body').css("background", "coral");
+            $('.fa-toggle-off').show();
+            $('.fa-toggle-on').hide();
+            $('p').css("color", "white");
+        });
+             $('.fa-toggle-off').click(()=>{
+            $('body').css("background", "coral");
+            $('.fa-toggle-off').hide();
+            $('.fa-toggle-on').show();
+            $('p').css("color", "green");
+        });
+    });
+
+    </script>
+</body>
+</html>

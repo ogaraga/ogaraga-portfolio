@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background: rgba(0, 0, 0, 1);
+background-attachment: fixed;
+width: 100vw;
+height: 100vh;
+overflow-y: scroll;
+@media screen and (max-width: 540px) {
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+}
+details{
+    color: #fff;
+    font-size: 20px;
+    @media screen and (max-width: 540px){
+        margin: auto;
+        padding: 5px;
+        width: auto;
+
+    }
+
+    P{
+        text-align: left;
+        padding: 20px;
+        line-height: 1.5;
+        word-spacing: 5px;
+        margin: 3px;
+    }
+
+    h2{
+        text-align: center;
+        color: red;
+        a{
+        text-decoration: none;
+    color: gold;
+    margin: 30px;
+    }
+}
+    summary{
+        text-align: justify;
+        line-height: 2.5;
+        margin: 30px;
+        outline: none;
+        border: none;
+        &:hover{
+            cursor: pointer;
+            color: red;
+        }
+            
+    }
+    .surv-odd{
+        color: white;
+        width: 90%;
+        height: auto;
+        text-align: justify;
+        margin: auto;
+        #surving{
+            color: aqua;
+        }
+        a{
+            color: gold;
+            text-decoration: dotted;
+            cursor: pointer;
+            &:hover{
+                color: green;
+                transition:  all 0.3s
+            }
+        }
+    }
+    .images-of-surv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        @media screen and (max-width:540px) {
+            display: grid;
+            width: auto;
+            height: auto;
+            margin: 20px auto;
+        }
+        img{
+            padding: 10px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    #media{
+        color: yellow;
+        text-align: start;
+    }
+    .linksocial{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: auto 20px;
+        text-align: center;
+    }
+    i{
+        color: #fff;
+        font-size: 20px;
+        padding: 5px;
+        &:hover{
+            cursor: pointer;
+            color: aqua;
+            transition: all .5s;
+        }
+    }
+}
+
+#caps{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    &:hover{
+        color: red;
+        padding: 10px;
+        cursor: pointer;
+        width: auto;
+    }
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+.link-1{
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+}
+
+footer{
+    color: gold;
+    opacity: 0.99;
+    overflow: hidden;
+    p{
+        text-align: start;
+        padding: 30px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 540px) {
+        text-align: center;
+        margin-top: auto;
+        height: auto;
+    }
+}
+

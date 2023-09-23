@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  width: 100vw;
+}
+@media screen and (max-width: 540px) {
+  body {
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+}
+body #mytextmgs {
+  background-color: rgba(0, 0, 0, 0.781);
+  width: auto;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 10px;
+}
+body #mytextmgs aside {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+body #mytextmgs .fa-envelope {
+  color: green;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  display: grid;
+}
+body #mytextmgs p {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+}
+body .contact-me {
+  color: white;
+  margin: auto;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me {
+    width: auto;
+    height: auto;
+  }
+}
+body .contact-me .intro {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me .intro {
+    width: auto;
+    margin: auto;
+    position: relative;
+  }
+}
+body .contact-me .intro p {
+  color: gray;
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 30px;
+  font-family: verdana;
+  font-weight: 900;
+}
+body .contact-me .intro a {
+  color: gray;
+  font-size: 20px;
+  margin-top: 70px;
+  position: absolute;
+  right: 10%;
+}
+body .contact-me .intro a:hover {
+  color: aqua;
+  background-color: black;
+  transition: all 0.8s;
+  font-variant: small-caps;
+  font-size: 19px;
+}
+body .contact-me .fill_in {
+  margin: 20px auto;
+}
+body .contact-me .fill_in #register {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(128, 128, 128, 0.651);
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 10;
+}
+body .contact-me .fill_in #register:hover {
+  color: rgba(255, 0, 255, 0.61);
+  background-color: black;
+  transition: all 0.9s ease-in-out;
+  font-size: 22px;
+}
+body .contact-me form {
+  font-size: 20px;
+  padding: 20px;
+  height: 80%;
+  width: 80%;
+  border: 1px solid teal;
+}
+body .contact-me form .wrapper_1.active {
+  width: 50%;
+  position: absolute;
+  left: 30%;
+  transition: all 1s ease-out;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: aliceblue;
+}
+@media screen and (max-width: 900px) {
+  body .contact-me form .wrapper_1.active {
+    width: auto;
+    margin: auto;
+    margin-right: 20px;
+    top: auto;
+    left: 9%;
+    padding: 10px;
+  }
+}
+body .contact-me form .wrapper_1.active #btns_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contact-me form .wrapper_1.active #btns_1 #myreset {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1.active #btns_1 #myreset {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1.active #btns_1 #myreset:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+body .contact-me form .wrapper_1.active #btns_1 #next {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1.active #btns_1 #next {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1.active #btns_1 #next:hover {
+  cursor: pointer;
+  background-color: salmon;
+  color: white;
+}
+body .contact-me form .wrapper_1.active #mylabel1, body .contact-me form .wrapper_1.active #mylabeltel, body .contact-me form .wrapper_1.active #mylabel {
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 0.76);
+}
+body .contact-me form .wrapper_1.active input {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  outline: none;
+  border: 1px solid teal;
+  margin-bottom: -25px;
+  background-color: aliceblue;
+  font-size: 20px;
+  width: 100%;
+}
+body .contact-me form .wrapper_1.active input:placeholder {
+  color: rgba(128, 128, 128, 0.747);
+}
+body .contact-me form .wrapper_1.active input:focus {
+  background-color: coral;
+}
+body .contact-me form .wrapper_1 {
+  width: 50%;
+  position: absolute;
+  left: -1400px;
+  transition: all 1s ease-in;
+  padding: 10px;
+  margin: auto;
+  background-color: aliceblue;
+}
+@media screen and (max-width: 600px) {
+  body .contact-me form .wrapper_1 {
+    width: auto;
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+body .contact-me form .wrapper_1 #btns_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contact-me form .wrapper_1 #btns_1 #myreset {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1 #btns_1 #myreset {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1 #btns_1 #myreset:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+body .contact-me form .wrapper_1 #btns_1 #next {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_1 #btns_1 #next {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_1 #btns_1 #next:hover {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+body .contact-me form .wrapper_1 #mylabel1, body .contact-me form .wrapper_1 #mylabeltel, body .contact-me form .wrapper_1 #mylabel {
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 0.76);
+}
+body .contact-me form .wrapper_1 input {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  outline: none;
+  border: none;
+  margin-bottom: -25px;
+  background-color: aliceblue;
+  font-size: 20px;
+  width: 100%;
+}
+body .contact-me form .wrapper_1 input:placeholder {
+  color: rgba(128, 128, 128, 0.747);
+}
+body .contact-me form .wrapper_1 input:focus {
+  background-color: coral;
+}
+body .contact-me form .wrapper_2 {
+  width: 50%;
+  margin: auto;
+  display: none;
+  padding: 10px;
+  background-color: aliceblue;
+}
+@media screen and (max-width: 600px) {
+  body .contact-me form .wrapper_2 {
+    width: auto;
+    margin: auto;
+    padding: 10px;
+  }
+}
+body .contact-me form .wrapper_2 .btns_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contact-me form .wrapper_2 .btns_2 #prev {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid teal;
+  margin: auto;
+  outline: none;
+  width: 40%;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_2 .btns_2 #prev {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_2 .btns_2 #prev:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: red;
+}
+body .contact-me form .wrapper_2 .btns_2 #mybtns {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid teal;
+  margin: auto;
+  outline: none;
+  width: 40%;
+  font-size: 20px;
+  background-color: aliceblue;
+  font-weight: 900;
+}
+@media screen {
+  body .contact-me form .wrapper_2 .btns_2 #mybtns {
+    margin: auto 20px;
+  }
+}
+body .contact-me form .wrapper_2 .btns_2 #mybtns:hover {
+  cursor: pointer;
+  background-color: gold;
+  color: red;
+}
+body .contact-me form .wrapper_2 #mylabel5, body .contact-me form .wrapper_2 #mylabel6 {
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 0.76);
+}
+body .contact-me form .wrapper_2 #radio-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+body .contact-me form .wrapper_2 #radio-radio #mylabel3, body .contact-me form .wrapper_2 #radio-radio #mylabel4 {
+  margin-top: auto;
+  color: rgba(128, 128, 128, 0.76);
+}
+body .contact-me form .wrapper_2 #radio-radio #mylabel2 {
+  margin-left: 0px;
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 0.76);
+}
+body .contact-me form .wrapper_2 #radio-radio #radiobox2, body .contact-me form .wrapper_2 #radio-radio #radiobox1 {
+  margin: auto;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+body .contact-me form .wrapper_2 input {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  outline: none;
+  border: 1px solid teal;
+  margin-bottom: -25px;
+  background-color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+body .contact-me form .wrapper_2 input:focus {
+  background-color: coral;
+}
+body .contact-me form .wrapper_2 select {
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  padding-right: 35px;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid teal;
+  width: 100%;
+  background-color: aliceblue;
+}
+body .contact-me form .wrapper_2 textarea {
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid teal;
+  outline: none;
+  background-color: aliceblue;
+}
+@media screen and (max-width: 540px) {
+  body .contact-me form .wrapper_2 textarea {
+    width: 100%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=cont.css.map */

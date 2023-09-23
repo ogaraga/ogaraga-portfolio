@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: visible;
+    overflow-x: hidden;
+    @media screen and (max-width: 540px) {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    } 
+}
+body{
+    background-image: url(pic-6.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.ngo_history{
+    max-width: 100vw;
+    width: auto;
+    max-height: auto;
+    color: grey;
+    background-color: aliceblue;
+    padding: 60px 20px;
+        
+    h1{
+        text-align: center;
+        font-variant: small-caps;
+        font-size: 15px;
+        margin:  auto;
+        position: absolute;
+        background-color: grey;
+        padding: 5px;
+        width: auto;
+        left: 30%;
+        right: 30%;
+        opacity: 1;
+        top: 3%;
+        color: rgb(255, 128, 0);
+        font-weight: bold;
+        animation: headings 8s ease forwards;
+        @media screen and (max-width:540px) {
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: -2%;
+            left: 0%;
+            opacity: 0.6;
+            padding: 60px;
+        }
+        
+        @keyframes headings {
+
+            0%{
+                transform: scale(1);
+                color: rgb(255, 196, 1);
+                top: 0;
+                left: 30%;
+                @media screen and (max-width:540px) {
+                    margin: auto;
+                    padding: auto;
+                    height: 100px;
+                    width: 100px;
+                    left: 30%;
+                    
+                }
+
+            }
+
+
+            40%{
+                transform: translateY(300px);
+                border-radius: 60%;
+                background: linear-gradient(to right, green, yellow,coral);
+                width: 200px;
+                height: 200px;
+                right: 30%;
+                bottom: 300px;
+                padding: 10px;
+            @media screen and (max-width:540px) {
+                margin: auto;
+                padding: auto;
+                height: 100px;
+                width: 100px;
+                right: 200px;
+
+            }
+
+        
+            }
+            75%{
+                transform: rotate(1turn);
+                border-radius: 5%;
+                background-color: crimson;
+                width: auto;
+                text-align: center;
+                height: 200px;
+                right: 30%;
+                left: 30%;
+                top: 100px;
+                @media screen and (max-width:540px) {
+                    margin: auto;
+                    padding: auto;
+                    height: 100px;
+                    width: auto;
+                    left: 30%;
+                    right: 30%;
+                    top: inherit;
+                }
+            }
+            
+        }
+    }
+    p{
+        line-height: 1.5;
+        text-align: justify;
+        margin: 10px auto;
+        &:hover{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    }
+
+}
+.ngo_website{
+    min-width: 80%;
+    max-height: auto;
+    margin: auto;
+    color: #000;
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+
+
+    p{
+        line-height: 1.5;
+        color: blue;
+        margin-top: 30px;
+    }   
+    a{
+        color: coral;
+        margin: auto;
+        &:hover{
+            color: black;
+            transition: 0.5s;
+            text-transform: lowercase;
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        width: auto;
+        margin: auto;
+        height: auto;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        padding: 10px;
+
+    }
+}
+footer{
+    background-color: gray;
+  height: 100px;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: relative;
+  bottom: -10px;
+  
+  p{
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    bottom: 0;
+    color: #ffff;
+    transform: translate(-50%,-50%);
+
+  }
+  @media screen and (max-width: 600px) {
+    bottom: -10px;
+    width: 100%;
+  }
+}
