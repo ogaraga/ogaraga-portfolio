@@ -78,7 +78,7 @@ body .work-duty summary:hover {
   cursor: pointer;
 }
 body .work-duty p {
-  color: #fff;
+  color: grey;
   font-size: 20px;
 }
 body .work-duty a {
