@@ -60,13 +60,15 @@ const myForm = document.getElementById("contactme");
 const message = document.getElementById("message");
 const submit = document.getElementById("forms");
 const locationz = document.querySelector('#selectme');
-
+const waiting = document.getElementById('sending');
 
 submit.addEventListener("submit", async (event) => {
     event.preventDefault();
-
-    
-        const options = {
+    waiting.innerHTML = "wait! sending message..."
+    waiting.style.color = 'green';
+    waiting.style.textAlign = 'center';
+    setTimeout( async () => {
+            const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -105,6 +107,7 @@ submit.addEventListener("submit", async (event) => {
         myLab.style.color = "red";
 
     }
+}, 4000);
 
 });
 
