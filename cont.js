@@ -3,6 +3,8 @@
 const register = document.querySelector("#register");
 const wrapper = document.querySelector(".wrapper_1");
 
+
+
 register.addEventListener("click", (e) => {
     wrapper.classList.toggle('active');
     fullName.value = "";
@@ -10,6 +12,8 @@ register.addEventListener("click", (e) => {
     telephone.value = "";
 
 })
+
+
 //accessing html elements for manipulation
 const male = document.getElementById("radiobox1");
 const female = document.getElementById("radiobox2");
@@ -27,12 +31,13 @@ nextBtn.addEventListener("click", () => {
         form_1.style.display = "none";
         myLabel.innerHTML = "";
 
-    }
+}
     else {
         form_1.style.display = "block";
         form_2.style.display = "none";
-        myLabel.innerHTML = "** pls reconfirm your entries before submission **";
+        myLabel.innerHTML = "Unable to proceed to next, try again!";
         myLabel.style.color = "red";
+        myLabel.style.textAlign = "center";
     }
 })
 //previous button even
@@ -62,13 +67,16 @@ const submit = document.getElementById("forms");
 const locationz = document.querySelector('#selectme');
 const waiting = document.getElementById('sending');
 
-submit.addEventListener("submit", async (event) => {
+submit.addEventListener("submit", (event) => {
     event.preventDefault();
-    waiting.innerHTML = "wait! sending message..."
-    waiting.style.color = 'green';
+    waiting.innerHTML = "Wait! Sending message to database..."
+    waiting.style.color = 'blue';
     waiting.style.textAlign = 'center';
-    setTimeout( async () => {
-            const options = {
+    myLab.innerHTML = "";
+   try{
+    setTimeout(() => {
+        
+        const options = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -85,9 +93,9 @@ submit.addEventListener("submit", async (event) => {
 
         const url = 'http://localhost:5000/message'
         
-        const response = await fetch(url, options)
+        const response =  fetch(url, options)
         if (response.ok) {
-            const jsonRes = await response.json();
+            const jsonRes =  response.json();
             console.log(jsonRes)
         };
     
@@ -103,11 +111,16 @@ submit.addEventListener("submit", async (event) => {
     else {
         feedMe.style.display = "none";
         myForm.style.display = "block";
-        myLab.innerHTML = "** pls reconfirm your entries before submission **";
+        myLab.innerHTML = "Input values rejected by server, try again";
         myLab.style.color = "red";
+        waiting.innerHTML = "";
 
     }
 }, 4000);
+
+}catch(error){
+    console.log(error.message);
+}
 
 });
 
