@@ -128,39 +128,29 @@ body{
 
 .foter{
  background-color:#ffff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
   height: 100px;
   width: 100%;
   border: 1px solid black;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  position: relative;
-  bottom: 200px;
-  margin-top: 100px;
+  margin-top: -100px;
 
       p{
     text-align: center;
-    position: absolute;
     font-size: 20px;
-    width: 100%;
-    top: 60%;
-    left: 50%;
-    bottom: 0;
     color: #000;
-    transform: translate(-50%,-50%);
-
   }
   @media screen and (max-width: 700px) {
-    position: relative;
-    bottom: 10px;
-    margin-top: 60px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+    margin-top: 30px;
     width: 100%;
-    height: 30px;
+    height: 80px;
     p{
         text-align: center;
-        position: absolute;
-        top: -10px;
       
     }
   }
