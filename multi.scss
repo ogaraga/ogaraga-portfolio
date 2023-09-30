@@ -312,8 +312,10 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
     margin: 10px auto;
+    gap: 10px;
 
     li{
         list-style: none;
