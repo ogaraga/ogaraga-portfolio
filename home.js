@@ -364,7 +364,7 @@ window.addEventListener("load", (e) => {
                 logIn.innerHTML = "Log In";
                 logOn.style.display = "none";
                 bodyPage.style.display = "block";
-                yourName.textContent = `Logged: ${email.value}`;
+                yourName.innerHTML = `LoggedIn: ${email.value}`;
                 yourName.style.borderRadius = "10px";
                 email.value = "";
                 password.value = "";
@@ -373,14 +373,14 @@ window.addEventListener("load", (e) => {
             else {
                 logOn.style.display = "block";
                 bodyPage.style.display = "none";
-                yourName.textContent = "";
-                redSpan.textContent = "Please supply valid inputs!";
+                yourName.innerHTML = `LoggedIn: ${email.value}`;
+                redSpan.innerHTML = "Please supply valid inputs!";
                 logIn.innerHTML = "Log In";
             }
         }, 3000);
         deHome.addEventListener("click", (e) => {
             e.preventDefault();
-            yourName.textContent = `LoggedIn: ${email.value}`;
+            yourName.innerHTML = `LoggedIn: ${email.value}`;
         }
         )
     })
