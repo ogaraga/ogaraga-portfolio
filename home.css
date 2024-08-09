@@ -106,7 +106,7 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
-  bottom: -15px;
+  bottom: -40px;
   display: block;
 }
 
@@ -366,6 +366,41 @@ body {
     margin: 10px auto;
   }
 }
+.pic_social .software span {
+  text-align: justify;
+  margin: auto 10px;
+  text-transform: capitalize;
+  color: green;
+  opacity: 0.3;
+  position: absolute;
+  top: 250px;
+  font-weight: bolder;
+  animation: software 5s linear forwards;
+  transition: all 10s;
+}
+@keyframes software {
+  from {
+    position: absolute;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    width: 100%;
+    opacity: 0.3;
+    transition: all 10s;
+  }
+  to {
+    position: absolute;
+    left: 10px;
+    top: 540px;
+    visibility: visible;
+    transition: all 20s;
+    width: 100%;
+    opacity: 0.3;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: inherit;
+  }
+}
 
 .imag-info {
   border: none;
@@ -512,7 +547,7 @@ footer p {
 }
 
 .signOn {
-  background-color: aliceblue;
+  background-color: aqua;
   display: none;
   justify-content: center;
   align-items: center;
@@ -525,58 +560,48 @@ footer p {
 
 .form {
   display: grid;
-  background-color: aliceblue;
+  background-color: brown;
   width: 70%;
   height: 70%;
   margin: 10px auto;
   place-content: center;
   border-radius: 15px;
   border-width: 5px;
-  border: 1px solid white;
+  border: 2px solid white;
   box-shadow: 2px 3px 5px crimson, -2px -3px 6px gray;
 }
-.form .inputs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid teal;
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  margin: 10px auto;
-}
-.form .inputs input {
+
+input {
   padding: 10px;
   width: 100%;
   margin: 20px auto;
-  border: 1px solid teal;
+  border: none;
   outline: none;
-  background-color: aliceblue;
+  background-color: aqua;
   font-size: 21px;
 }
-.form .inputs label {
+
+label {
   font-size: 21px;
-  color: grey;
-  margin: auto;
+  color: whitesmoke;
   letter-spacing: 5px;
   margin-top: 20px;
   margin-bottom: -20px;
 }
-.form .inputs #signIn {
-  width: 100%;
+
+#signIn {
   padding: 10px;
-  margin: auto;
-  background-color: aliceblue;
+  background-color: black;
   color: aqua;
-  border: 1px solid teal;
+  border: none;
   outline: none;
   font-size: 21px;
   text-transform: capitalize;
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
-.form .inputs #signIn:hover {
+
+#signIn:hover {
   background-color: darkgrey;
   color: black;
   box-shadow: 1px 2px 3px aqua, -2px -3px 4px gray;
